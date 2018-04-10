@@ -16,7 +16,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/chanxuehong/wechat/corp"
+	"github.com/sleagon/wechat/corp"
 )
 
 // 下载多媒体到文件.

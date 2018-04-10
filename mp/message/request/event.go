@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 const (

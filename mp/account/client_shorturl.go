@@ -6,7 +6,7 @@
 package account
 
 import (
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 // 将一条长链接转成短链接。

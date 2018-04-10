@@ -6,7 +6,7 @@
 package addresslist
 
 import (
-	"github.com/chanxuehong/wechat/corp"
+	"github.com/sleagon/wechat/corp"
 )
 
 // 邀请成员关注

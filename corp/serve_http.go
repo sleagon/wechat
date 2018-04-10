@@ -16,7 +16,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/chanxuehong/wechat/util"
+	"github.com/sleagon/wechat/util"
 )
 
 var zeroAESKey [32]byte

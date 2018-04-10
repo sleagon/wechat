@@ -5,8 +5,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/chanxuehong/wechat/mp"
-	"github.com/chanxuehong/wechat/mp/jssdk"
+	"github.com/sleagon/wechat/mp"
+	"github.com/sleagon/wechat/mp/jssdk"
 )
 
 var TokenServer = mp.NewDefaultTokenServer("appid", "appsecret", nil)

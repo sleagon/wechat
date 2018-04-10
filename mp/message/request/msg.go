@@ -6,7 +6,7 @@
 package request
 
 import (
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 const (

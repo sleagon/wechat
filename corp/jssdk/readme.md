@@ -5,8 +5,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/chanxuehong/wechat/corp"
-	"github.com/chanxuehong/wechat/corp/jssdk"
+	"github.com/sleagon/wechat/corp"
+	"github.com/sleagon/wechat/corp/jssdk"
 )
 
 var TokenServer = corp.NewDefaultTokenServer("corpId", "corpSecret", nil)

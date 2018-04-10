@@ -6,7 +6,7 @@
 package card
 
 import (
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 type Color struct {

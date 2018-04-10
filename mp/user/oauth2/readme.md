@@ -14,7 +14,7 @@ import (
 
 	"github.com/chanxuehong/session"
 	"github.com/chanxuehong/util/random"
-	"github.com/chanxuehong/wechat/mp/user/oauth2"
+	"github.com/sleagon/wechat/mp/user/oauth2"
 )
 
 var (
@@ -122,7 +122,7 @@ import (
 
 	"github.com/chanxuehong/session"
 	"github.com/chanxuehong/util/random"
-	"github.com/chanxuehong/wechat/mp/user/oauth2"
+	"github.com/sleagon/wechat/mp/user/oauth2"
 )
 
 var (

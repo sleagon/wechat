@@ -9,7 +9,7 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 // 根据二维码的ticket得到二维码图片的url

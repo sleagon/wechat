@@ -6,7 +6,7 @@
 package material
 
 import (
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 // 删除永久素材.

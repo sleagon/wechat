@@ -8,7 +8,7 @@ package account
 import (
 	"net/http"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 type Client struct {

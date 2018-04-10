@@ -8,7 +8,7 @@ package media
 import (
 	"net/http"
 
-	"github.com/chanxuehong/wechat/corp"
+	"github.com/sleagon/wechat/corp"
 )
 
 type Client struct {

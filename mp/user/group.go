@@ -8,7 +8,7 @@ package user
 import (
 	"errors"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 const GroupCountLimit = 100 // 一个公众账号，最多支持创建100个分组。

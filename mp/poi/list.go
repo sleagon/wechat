@@ -8,7 +8,7 @@ package poi
 import (
 	"fmt"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 type PoiBrief struct {

@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chanxuehong/wechat/corp"
+	"github.com/sleagon/wechat/corp"
 )
 
 // jsapi_ticket 中控服务器接口.

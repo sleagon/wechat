@@ -8,7 +8,7 @@ package card
 import (
 	"errors"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 type MeetingTicketUpdateUserParameters struct {

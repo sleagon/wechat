@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"runtime"
 
-	wechatjson "github.com/chanxuehong/wechat/json"
+	wechatjson "github.com/sleagon/wechat/json"
 )
 
 // 微信公众号"主动"请求功能的基本封装.

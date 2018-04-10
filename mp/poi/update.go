@@ -8,7 +8,7 @@ package poi
 import (
 	"errors"
 
-	"github.com/chanxuehong/wechat/mp"
+	"github.com/sleagon/wechat/mp"
 )
 
 type PoiUpdateParameters struct {
