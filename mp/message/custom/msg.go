@@ -11,12 +11,13 @@ import (
 )
 
 const (
-	MsgTypeText  = "text"  // 文本消息
-	MsgTypeImage = "image" // 图片消息
-	MsgTypeVoice = "voice" // 语音消息
-	MsgTypeVideo = "video" // 视频消息
-	MsgTypeMusic = "music" // 音乐消息
-	MsgTypeNews  = "news"  // 图文消息
+	MsgTypeText           = "text"            // 文本消息
+	MsgTypeMiniProgamPage = "miniprogrampage" // 小程序页消息
+	MsgTypeImage          = "image"           // 图片消息
+	MsgTypeVoice          = "voice"           // 语音消息
+	MsgTypeVideo          = "video"           // 视频消息
+	MsgTypeMusic          = "music"           // 音乐消息
+	MsgTypeNews           = "news"            // 图文消息
 )
 
 type CommonMessageHeader struct {
@@ -52,6 +53,24 @@ func NewText(toUser, content, kfAccount string) (text *Text) {
 		},
 	}
 	text.Text.Content = content
+
+	if kfAccount != "" {
+		text.CustomService = &CustomService{
+			KfAccount: kfAccount,
+		}
+	}
+	return
+}
+
+// NewMiniPageMsg 新建小程序消息
+func NewMiniPageMsg(toUser string, content MiniMsgContent, kfAccount string) (text *MiniProgramPage) {
+	text = &MiniProgramPage{
+		CommonMessageHeader: CommonMessageHeader{
+			ToUser:  toUser,
+			MsgType: MsgTypeMiniProgamPage,
+		},
+		Content: content,
+	}
 
 	if kfAccount != "" {
 		text.CustomService = &CustomService{
@@ -100,6 +119,21 @@ type Voice struct {
 		MediaId string `json:"media_id"` // 通过上传多媒体文件得到的 MediaId
 	} `json:"voice"`
 
+	*CustomService `json:"customservice,omitempty"`
+}
+
+// MiniMsgContent 小程序消息内容主体
+type MiniMsgContent struct {
+	Title        string `json:"title"`
+	PagePath     string `json:"pagepath"`
+	AppId        string `json:"appid"`
+	ThumbMediaId string `json:"thumb_media_id"`
+}
+
+// MiniProgramPage 小程序消息
+type MiniProgramPage struct {
+	CommonMessageHeader
+	Content        MiniMsgContent `json:"miniprogrampage"`
 	*CustomService `json:"customservice,omitempty"`
 }
 

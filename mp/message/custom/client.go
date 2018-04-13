@@ -50,6 +50,14 @@ func (clt *Client) SendImage(msg *Image) error {
 	return clt.send(msg)
 }
 
+// 发送小程序消息
+func (clt *Client) SendMiniMsg(msg *MiniProgramPage) error {
+	if msg == nil {
+		return errors.New("msg == nil")
+	}
+	return clt.send(msg)
+}
+
 // 发送客服消息, 语音.
 func (clt *Client) SendVoice(msg *Voice) error {
 	if msg == nil {
